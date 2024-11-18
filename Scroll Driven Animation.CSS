@@ -1,0 +1,32 @@
+<style>
+@keyframes shrink-name {
+from { font-size: 2em;
+}
+to { font-size: 1.5em; }
+}
+@keyframes add-shadow {
+from { box-shadow: none; padding: 20px; }
+to { box-shadow: 0 4px 2px 2px gray; padding: 7px;
+}
+}
+header { position: sticky; top: 0; padding: 20px; background: #4a90e2; color: #fff;
+font-family: Arial, sans-serif;
+animation: add-shadow Linear both;
+}
+h2 {
+animation: shrink-name Linear both;
+}
+header,
+h2 {
+animation-timeline: scroll();
+animation-range: 0 150px;
+content {
+}
+padding: 20px;
+font-family: Arial, sans-serif;
+}
+P {
+margin: 20px 0;
+Line-height: 1.6;
+}
+    
